@@ -128,4 +128,10 @@ a {
     flex-wrap: wrap;
     margin: 2% 10%;
   }
+
+  .about-img {
+    padding-right: 2%;
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
