@@ -215,6 +215,10 @@ a {
     min-width: 0;
   }
 
+  .overlay {
+    background-color: transparent;
+  }
+
 .section {
     display: flex;
     flex-direction: column;
