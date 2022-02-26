@@ -206,6 +206,7 @@ a {
 .img_links {
     height: auto;
     width: 100%;
+    pointer-events: none;
   }
 
 .gallery {
