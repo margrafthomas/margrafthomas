@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-size: 24pt;
+  font-family: "Lato", sans-serif;
   color: #000000;
   text-decoration: none;
   list-style: none;
 }
 
-.ig {
-  transition: all 0.3s ease 0s;
-}
-
-.ig:hover {
-  opacity: 50%;
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  pointer-events: none;
 }
 
 a {
@@ -26,59 +25,86 @@ transition: all 0.3s ease 0s;
 
 a:hover {
   color: #0088A9;
-  }
+}
 
 .head {
   display: flex;
   align-items: center;
-  height: 80px;
-  width: 100%;
+  background: #fff;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  height: 10vh;
+  min-height: 40pt;
+  border-bottom-style: solid;
+  border-width: 1px;
+  margin-bottom: 20px;
+}
+
+.foot {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  position: sticky;
+  z-index: 100;
+  bottom: 0;
+  justify-content: space-evenly;
+  height: 5vh;
+  border-top-style: solid;
+  border-width: 1px;
+  margin-top: auto;
+}
+
+.links {
+  font-size: 12pt;
+  font-weight: 300;
 }
 
 .name {
   position: absolute;
-  left: 1.2%;
+  left: 20%;
+  font-weight: 900;
+  font-size: 32pt;
   }
   
 .about {
   position: absolute;
-  right: 1.2%;
+  right: 20%;
+  font-weight: 300;
+  font-size: 16pt;
   }
 
 .ul_images {
   display: flex;
   flex-wrap: wrap;
   margin: 0 1%;  
+  justify-content: center;
   }
-
-.img_links {
-  height: 20vh;
-  flex-grow: 1;
-  margin: 5px;
-}
-
-.img_links:last-child {
-  flex-grow: 10;
-}
 
 .gallery {
-  max-height: 100%;
-  min-width: 100%;
-  object-fit: cover;
+  width: 55vw;
+  max-height: 80vh;
+  margin-bottom: 20px;
+  object-fit: scale-down;
   vertical-align: bottom;
-  cursor: pointer;
-  transition: all 0.3s;
   }
 
-.gallery:hover {
-    opacity: 50%;    
-  }
+.space {
+  height: 82vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+ }
 
 .section {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin: 2% 25%;
+  margin: 0 1%; 
+  width: 55vw;
+  
 }
 
 p {
@@ -94,83 +120,7 @@ p {
   max-height: 200px;
 }
 
-.overlay {
-  background-color: #0088A9;
-}
 
-.links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 2% 35%;
-}
-
-.footer {
-  font-size: 12pt;
-  font-weight: 300;
-}
-
-h2 {
-  width: 97.4%;
-  position: relative;
-  left: 1.3%;;
-  text-align: center; 
-  border-bottom: 3px solid #000; 
-  line-height: 0em;
-  margin: 20px 0 20px;
-} 
-
-h2 span { 
-   background:#fff; 
-   padding:0 10px; 
-}
-
-/*popup window when clicked*/
-
-.img-window {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-}
-
-.img-window img {
-  max-height: 80vh;
-  max-width: 80vw;
-  }
-
-/* next image styling */
-
-.img-btn-next {
-  display: block;
-  padding: 6px 10px;
-  border-radius: 0;
-  background-color: #111111;
-  position: fixed;
-  top: 48vh;
-  z-index: 500;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-.img-btn-prev {
-  display: block;
-  padding: 6px 10px;
-  border-radius: 0;
-  background-color: #111111;
-  position: fixed;
-  top: 48vh;
-  z-index: 500;
-  cursor: pointer;
-  text-transform: uppercase;
-}
 
 @media (max-aspect-ratio: 1/1) {
   .img_links {
@@ -178,14 +128,7 @@ h2 span {
   }
 }
 
-
-@media (max-height: 480px) {
-  .img_links {
-    height: 40vh;
-  }
-}
-
-@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+@media (max-aspect-ratio: 1/1) and (max-width: 851px) {
 
 .name {
     position: absolute;
@@ -205,20 +148,10 @@ a {
     flex-direction: row;
   }
 
-.img_links {
-    height: auto;
-    width: 100%;
-    pointer-events: none;
-  }
-
 .gallery {
-    width: 100%;
+    width: 90vw;
     max-height: 75vh;
     min-width: 0;
-  }
-
-  .overlay {
-    background-color: transparent;
   }
 
 .section {
