@@ -133,25 +133,23 @@ p {
 .name {
     position: absolute;
     left: 2.5%;
+    font-size: 12pt;
     }
     
 .about {
     position: absolute;
     right: 2.5%;
+    font-size: 12pt;
     }
 
 a {
-  font-size: 14pt;
-  }
-
-.ul-images {
-    flex-direction: row;
+  font-size: 10pt;
   }
 
 .gallery {
-    width: 90vw;
+    width: 95vw;
     max-height: 75vh;
-    min-width: 0;
+    margin-bottom: 20px;
   }
 
 .section {
@@ -169,7 +167,7 @@ a {
 
 .links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 2% 10%;
   }
 }
