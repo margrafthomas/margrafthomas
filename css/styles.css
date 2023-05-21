@@ -104,8 +104,7 @@ a:hover {
   flex-wrap: nowrap;
   margin: 0 1%; 
   width: 55vw;
-  
-}
+  }
 
 p {
   font-weight: 300;
@@ -156,7 +155,8 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 2% 10%;
+    margin-bottom: 20px;
+   width: 95vw;
   }
 
 .about-img {
