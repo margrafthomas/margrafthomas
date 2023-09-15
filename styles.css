@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 16pt;
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  padding-right:0px;
+  padding-left:0px;
+  margin-right:auto;
+  margin-left:auto
+}
+
+@media (min-width:768px){
+  .container{width:750px}}
+
+@media (min-width:992px){
+  .container{width:970px}}
+
+@media (min-width:1200px){
+  .container{width:1170px}}
+
+  .container-fluid {
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto
+  }  
+
+.ig {
+  transition: all 0.3s ease 0s;
+}
+
+.ig:hover {
+  opacity: 50%;
+}
+
+a {
+transition: all 0.3s ease 0s;
+color: #000;
+}
+
+a:hover {
+  opacity: 0.6;
+  text-decoration: none;
+  color: #000;
+  }
+
+  .head {
+    display: flex;
+    flex-direction: column; /* Stack the top and bottom divs vertically */
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    padding: 50px 0; /* Add some vertical padding */
+    color: #000;
+  }
+  
+  .top {
+    margin-bottom: 10px; /* Add space between top and bottom sections */
+    color: #000;
+  }
+  
+  .name {
+    text-decoration: none;
+    font-size: 24px; /* Increase font size for the top text/link */
+    font-weight: bold;
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .bottom {
+    display: flex; /* Arrange the bottom links horizontally */
+    justify-content: space-between; /* Distribute links to the left and right */
+    width: 45%; /* Ensure the entire width is used */
+  }
+  
+  .subpage {
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #000;
+    font-weight: 300;
+  }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 2% 25%;
+  color: #000;
+}
+
+p {
+  color: #000;
+  font-weight: 300;
+  font-size: 13pt;
+  align-self: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2%;
+}
+
+.footer {
+  font-size: 12pt;
+  font-weight: 300;
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2% 10%;
+  }
+
+.about-img {
+    padding-right: 2%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 10%;
+  }
+}
+
+  /* Galerie-Darstellung*/
+
+.gallery { 
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.gallery img { 
+  width: 100%; 
+  height: auto;
+  transition: 0ms;
+  margin-bottom: 10px;
+  opacity: 1;
+  page-break-inside: avoid; 
+  -webkit-column-break-inside: avoid; 
+  break-inside: avoid;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  opacity: 0.8;
+}
+
+
+.modal-img,.model-vid{
+margin: 0;
+padding: 0;
+width: 50vw;
+max-height: 100%;
+display: table;
+}
+
+.modal-body{
+padding: 0px;
+}
+
+.modal-dialog {
+height: 100%;
+position: relative;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.modal-content {
+border: none;
+}
+
+@media screen and (max-width: 767px) {
+.gallery { 
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2; }
+
+.head {
+  padding-bottom: 200px;
+}
+}
