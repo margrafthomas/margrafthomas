@@ -27,6 +27,9 @@
 @media (min-width:1200px){
   .container{width:1170px}}
 
+  @media (min-width:1600px){
+    .container{width:1570px}}
+
   .container-fluid {
     padding-right:15px;
     padding-left:15px;
@@ -198,9 +201,9 @@ border: none;
 
 @media screen and (max-width: 767px) {
 .gallery { 
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2; }
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1; }
 
 .head {
   padding-bottom: 200px;
