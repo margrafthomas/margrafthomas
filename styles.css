@@ -76,6 +76,22 @@
     font-weight: 900;
   }
 
+  h2 {
+    color: #000;
+    pointer-events: none;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  h3 {
+    color: #000;
+    font-weight: 300;
+    font-size: 12pt;
+    margin: 0;
+  }
+
 @media (max-width:768px){
 .gallery_startseite{width:100vw}
 .main {
@@ -222,6 +238,17 @@ p { /* auf about-Seite */
   overflow: hidden;
 }
 .gallery img { 
+  width: 100%; 
+  height: auto;
+  margin-bottom: 50px;
+  opacity: 1;
+  page-break-inside: avoid; 
+  -webkit-column-break-inside: avoid; 
+  break-inside: avoid;
+  cursor: pointer;
+}
+
+.gallery video { 
   width: 100%; 
   height: auto;
   margin-bottom: 50px;
