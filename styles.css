@@ -175,6 +175,10 @@ a:hover {
   font-weight: 300;
 }
 
+svg {
+  margin-bottom: 10px;
+}
+
 .section { /* auf about-Seite */
   display: flex;
   flex-direction: column;
