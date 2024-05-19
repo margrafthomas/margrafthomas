@@ -241,6 +241,7 @@ p { /* auf about-Seite */
   column-gap: 50px;
   overflow: hidden;
 }
+
 .gallery img { 
   width: 100%; 
   height: auto;
