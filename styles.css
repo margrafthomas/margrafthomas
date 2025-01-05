@@ -6,9 +6,9 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 100;
-  font-size: 16pt;
-  color: #fff;
+  font-size: 12pt;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .bg-img {
@@ -26,17 +26,21 @@ h1 {
   position: absolute;
   font-weight: 900;
   font-size: 48pt;
-  color: #fff;
+  color: #000;
   text-align: center;
   align-self: center;
 }
 
+.left-links, .right-links {
+  display: flex;
+  align-items: center;
+}
+
 
 .container {
-  padding-right:0px;
-  padding-left:0px;
-  margin-right:auto;
-  margin-left:auto;
+  margin-top: 25px;
+  padding-right: 15%;
+  padding-left: 15%;
 }
 
 @media (min-width:768px){
@@ -49,14 +53,7 @@ h1 {
   .container{width:1170px}}
 
 @media (min-width:1600px){
-    .container{width:90%}}
-
-.container-fluid {
-    padding-right:15px;
-    padding-left:15px;
-    margin-right:auto;
-    margin-left:auto
-  }  
+    .container{width:100%}}
 
 a {
 transition: all 0.3s ease 0s;
@@ -69,41 +66,60 @@ a:hover {
 
   .head {
     display: flex;
-    flex-direction: column; /* Stack the top and bottom divs vertically */
     align-items: center;
-    height: 150px;
+    justify-content: space-between;
+    padding-right: 15%;
+    padding-left: 15%;
+    height: 125px;
     width: 100%;
-    padding: 50px 0; /* Add some vertical padding */
+    padding-top: 50px; /* Add some vertical padding */
     color: #000;
-  }
-  
-  .top {
-    margin-bottom: 10px; /* Add space between top and bottom sections */
-    color: #000;
+    line-height: 125%;
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick the header to the top of the viewport */
+    z-index: 1000; /* Ensure the header is above other content */
+    background-color: white; /* Optional: Set a background color to avoid transparency issues */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Add a drop shadow */
   }
   
   .name {
+    display: flex;
+    text-align: right;
     text-decoration: none;
-    font-size: 24px; /* Increase font size for the top text/link */
+    margin-right: 60px;
+    font-size: 18pt; /* Increase font size for the top text/link */
     color: #000;
-    font-weight: 600;
+    font-weight: 600; 
   }
   
   .bottom {
     display: flex; /* Arrange the bottom links horizontally */
     justify-content: space-between; /* Distribute links to the left and right */
-    width: 45%; /* Ensure the entire width is used */
+    width: 60%; /* Ensure the entire width is used */
   }
   
   .subpage {
     text-decoration: none;
     margin-right: 20px;
     color: #000;
-    font-weight: 600;
+    font-weight: 500;
   }
 
-  .home {
-    color: #fff;
+  .subpage_2 {
+    text-decoration: none;
+    color: rgb(0, 140, 255);
+    font-weight: 500;
+    border-style: solid;
+    padding: 10px;  
+  }
+
+  .subpage_2:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 140, 255);
+    border-color: rgb(0, 140, 255);
+    padding: 10px;  
+    opacity: 1;
   }
 
 .section {
@@ -119,6 +135,13 @@ p {
   color: #000;
   font-weight: 300;
   font-size: 13pt;
+  align-self: center;
+}
+
+figcaption {
+  color: #000;
+  font-weight: 500;
+  font-size: 10pt;
   align-self: center;
 }
 
@@ -176,31 +199,33 @@ p {
 
   /* Galerie-Darstellung*/
 
+  figure {
+    margin-bottom: 50px;
+  }
+
 .gallery {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
   -webkit-column-gap: 10px;
   -moz-column-gap: 10px;
-  column-gap: 10px;
+  column-gap: 75px;
   overflow: hidden;
 }
 .gallery img { 
   width: 100%; 
   height: auto;
   transition: 0ms;
-  margin-bottom: 10px;
   opacity: 1;
   page-break-inside: avoid; 
   -webkit-column-break-inside: avoid; 
   break-inside: avoid;
-  cursor: pointer;
+  cursor: -webkit-zoom-in;
 }
 
 .gallery img:hover {
   opacity: 0.8;
 }
-
 
 .modal-img,.model-vid{
 margin: 0;
@@ -227,6 +252,15 @@ justify-content: center;
 border: none;
 }
 
+.hamburger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #000;
+}
+
 @media screen and (max-width: 1080px) {
 .gallery { 
       -webkit-column-count: 1;
@@ -234,6 +268,67 @@ border: none;
       column-count: 1; }
 
 .head {
-  padding-bottom: 200px;
 }
+
+.container {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.hamburger-menu {
+  display: block;
+}
+
+.bottom {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 125px; /* Adjust based on your header height */
+  right: 0;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bottom.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-links, .right-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.subpage, .subpage_2 {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-right: 0;
+  color: #000;
+  font-weight: 500;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+  padding: 10%;
+}
+
+.subpage_2:hover {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-color: black;
+  padding: 10%;  
+  opacity: 1;
+}
+
+a {
+  transition: none;
+  color: #000;
+  }
+
+a:hover {
+  opacity: 1;
+}
+
 }

@@ -7,7 +7,7 @@ body.lb-disable-scrolling {
   top: 0;
   left: 0;
   z-index: 9999;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
   display: none;
@@ -31,9 +31,11 @@ body.lb-disable-scrolling {
   max-height: none;
   border-radius: 0px;
 
-  /* Image border */
+  /* Image border 
   border: 2px solid white;
+  */
 }
+
 
 .lightbox a img {
   border: none;
@@ -48,8 +50,8 @@ body.lb-disable-scrolling {
   border-radius: 4px;
 
   /* Background color behind image.
-     This is visible during transitions. */
-  background-color: black;
+     This is visible during transitions. 
+  background-color: black; */
 }
 
 .lb-outerContainer:after {
@@ -58,7 +60,7 @@ body.lb-disable-scrolling {
   clear: both;
 }
 
-.lb-loader {
+/*.lb-loader {
   position: absolute;
   top: 43%;
   left: 0;
@@ -66,7 +68,7 @@ body.lb-disable-scrolling {
   width: 100%;
   text-align: center;
   line-height: 0;
-}
+} */
 
 .lb-cancel {
   display: block;
@@ -153,7 +155,7 @@ body.lb-disable-scrolling {
 
 .lb-data {
   padding: 0 4px;
-  color: #ccc;
+  color: #000;
 }
 
 .lb-data .lb-details {
@@ -178,7 +180,7 @@ body.lb-disable-scrolling {
   clear: left;
   padding-bottom: 1em;
   font-size: 12px;
-  color: #999999;
+  color: #000;
 }
 
 .lb-data .lb-close {
