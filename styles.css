@@ -136,6 +136,7 @@ p {
   font-weight: 300;
   font-size: 13pt;
   align-self: center;
+  text-transform: none;
 }
 
 figcaption {
