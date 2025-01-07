@@ -142,7 +142,6 @@ figcaption {
   color: #000;
   font-weight: 500;
   font-size: 10pt;
-  align-self: center;
 }
 
 .links {
@@ -200,6 +199,9 @@ figcaption {
   /* Galerie-Darstellung*/
 
   figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 50px;
   }
 
@@ -210,7 +212,7 @@ figcaption {
   -webkit-column-gap: 10px;
   -moz-column-gap: 10px;
   column-gap: 75px;
-  overflow: hidden;
+  overflow: hidden;  
 }
 .gallery img { 
   width: 100%; 
@@ -278,8 +280,6 @@ border: none;
       column-count: 1;
       }
 
-.head {
-}
 
 .container {
   padding-right: 5%;
