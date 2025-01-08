@@ -136,6 +136,7 @@ p {
   font-size: 13pt;
   align-self: center;
   text-transform: none;
+  text-align: justify;
 }
 
 figcaption {
@@ -279,6 +280,10 @@ border: none;
       -moz-column-count: 1;
       column-count: 1;
       }
+
+p {
+  width: 75vw;
+}
 
 
 .container {
