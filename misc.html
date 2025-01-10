@@ -122,7 +122,13 @@
 <script>function toggleMenu() {
   const menu = document.querySelector('.bottom');
   menu.classList.toggle('show');
-}</script>
+}
+
+document.addEventListener('contextmenu', event => {
+    event.preventDefault();
+});
+
+</script>
 
 </body>
 </html>

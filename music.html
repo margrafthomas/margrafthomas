@@ -185,6 +185,11 @@
   const menu = document.querySelector('.bottom');
   menu.classList.toggle('show');
 }
+
+document.addEventListener('contextmenu', event => {
+    event.preventDefault();
+});
+
 </script>
 
 </body>
